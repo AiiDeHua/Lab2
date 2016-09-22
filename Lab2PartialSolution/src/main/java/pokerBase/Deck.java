@@ -21,7 +21,8 @@ public class Deck {
 	}
 	
 	public Card Draw(){
-		//TODO - Implement the Draw method
-		return null;
+		Card tempCard = deckCards.get(0);
+		deckCards.remove(0);
+		return tempCard;
 	}
 }

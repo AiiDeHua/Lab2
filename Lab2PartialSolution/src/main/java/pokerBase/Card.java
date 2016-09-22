@@ -11,6 +11,9 @@ public class Card  implements Comparable {
 	private eSuit eSuit;
 	private eRank eRank;
 	private int iCardNbr;
+	public Card(){
+		
+	}
 	public Card(pokerEnums.eSuit eSuit, pokerEnums.eRank eRank, int iCardNbr) {
 		super();
 		this.eSuit = eSuit;
@@ -46,6 +49,11 @@ public class Card  implements Comparable {
 	    Card c = (Card) o; 
 	    return c.geteRank().compareTo(this.geteRank()); 
 
+	}
+
+	 public void seteRank(eRank eRank) {
+		this.eRank = eRank;
+		
 	}
 
 	
